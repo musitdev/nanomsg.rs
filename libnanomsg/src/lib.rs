@@ -16,6 +16,9 @@ pub static NN_PROTO_PIPELINE: c_int = 5;
 pub static NN_PUSH: c_int = NN_PROTO_PIPELINE * 16 + 0;
 pub static NN_PULL: c_int = NN_PROTO_PIPELINE * 16 + 1;
 pub static NN_MSG: u64 = -1;
+pub static NN_PROTO_REQREP: c_int = 3;
+pub static NN_REQ: c_int = NN_PROTO_REQREP * 16 + 0;
+pub static NN_REP: c_int = NN_PROTO_REQREP * 16 + 1;
 
 extern {
     /// "Creates an SP socket with specified domain and protocol. Returns
